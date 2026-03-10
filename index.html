@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Priya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ff4e8a,#6a5cff,#ffb347);
+background-size:400% 400%;
+animation:bgmove 8s infinite alternate;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%}
+100%{background-position:100% 50%}
+}
+
+h1{
+font-size:55px;
+animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom{
+from{transform:scale(1)}
+to{transform:scale(1.1)}
+}
+
+.message{
+font-size:22px;
+max-width:700px;
+margin-top:20px;
+line-height:1.6;
+padding:0 20px;
+}
+
+button{
+margin-top:40px;
+padding:14px 32px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:white;
+color:#ff4e8a;
+cursor:pointer;
+}
+
+#surprise{
+display:none;
+font-size:30px;
+margin-top:30px;
+}
+
+.balloon{
+position:absolute;
+bottom:-150px;
+width:60px;
+height:80px;
+border-radius:50%;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+100%{transform:translateY(-120vh)}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Happy Birthday Priya 🎂</h1>
+
+<div class="message">
+Priya,<br>
+Aaj ka din tumhare liye special hai.<br>
+May your life be full of happiness, success aur beautiful moments.
+</div>
+
+<button onclick="showSurprise()">Open Birthday Surprise</button>
+
+<div id="surprise">
+You are special Priya 🎉<br>
+Have the best birthday ever.
+</div>
+
+<div class="balloon" style="left:10%; background:#ff4081; animation-duration:9s;"></div>
+<div class="balloon" style="left:30%; background:#ffeb3b; animation-duration:11s;"></div>
+<div class="balloon" style="left:50%; background:#4caf50; animation-duration:10s;"></div>
+<div class="balloon" style="left:70%; background:#2196f3; animation-duration:12s;"></div>
+<div class="balloon" style="left:90%; background:#ff5722; animation-duration:8s;"></div>
+
+<script>
+
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+}
+
+</script>
+
+</body>
+  </html>
